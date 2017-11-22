@@ -20,7 +20,12 @@ hunter_add_version(
 # hunter_configuration_types(Armadillo CONFIGURATION_TYPES Release)
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Armadillo)
+set( UNRELOCATABLE_TEXT_FILES
+    share/Armadillo/CMake/ArmadilloConfig.cmake
+    share/Armadillo/CMake/ArmadilloLibraryDepends-debug.cmake
+    share/Armadillo/CMake/ArmadilloLibraryDepends-release.cmake
+)
 hunter_download(
     PACKAGE_NAME Armadillo
-    PACKAGE_UNRELOCATABLE_TEXT_FILES "share/Armadillo/CMake/ArmadilloConfig.cmake"
+    PACKAGE_UNRELOCATABLE_TEXT_FILES ${UNRELOCATABLE_TEXT_FILES} 
 )
