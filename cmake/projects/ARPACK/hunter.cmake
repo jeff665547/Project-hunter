@@ -13,7 +13,7 @@ hunter_add_version(
     PACKAGE_NAME ARPACK
     VERSION "3.6.0"
     URL "https://github.com/CHChang810716/arpack-ng/archive/master.zip"
-    SHA1 "f8837d9136340fe769d8f390293a6da7cc82e8bc"
+    SHA1 "da39a3ee5e6b4b0d3255bfef95601890afd80709"
 )
 
 
