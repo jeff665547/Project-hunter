@@ -12,8 +12,8 @@ include(hunter_download)
 hunter_add_version(
     PACKAGE_NAME Armadillo
     VERSION "7.800"
-    URL "https://github.com/CHChang810716/armadillo-code/archive/7.800.x.zip"
-    SHA1 "53a1e312d08731b08ce2550afbf53673648fe4a9"
+    URL "https://github.com/CHChang810716/armadillo-code/archive/1299edf0e6fa2e0b83482e71c0c1e332a61f6835.zip"
+    SHA1 "c81eaff170696114efaf45a4dcabe83ce5ef70ed"
 )
 
 
