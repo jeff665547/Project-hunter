@@ -12,8 +12,8 @@ include(hunter_download)
 hunter_add_version(
     PACKAGE_NAME ARPACK
     VERSION "3.6.0"
-    URL "https://github.com/CHChang810716/arpack-ng/archive/master.zip"
-    SHA1 "0ecd91ed6aa648da8152feb0e5f8c56d26b58660"
+    URL "https://github.com/CHChang810716/arpack-ng/archive/58d2aab2b7e10d6c6498c62ae7255e38b83569da.zip"
+    SHA1 "2301c11b9f93875b70e547c31a8cab378b0c8b35"
 )
 
 
