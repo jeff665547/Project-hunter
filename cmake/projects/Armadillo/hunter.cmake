@@ -24,6 +24,7 @@ set( UNRELOCATABLE_TEXT_FILES
     share/Armadillo/CMake/ArmadilloConfig.cmake
     share/Armadillo/CMake/ArmadilloLibraryDepends-debug.cmake
     share/Armadillo/CMake/ArmadilloLibraryDepends-release.cmake
+    share/Armadillo/CMake/ArmadilloLibraryDepends.cmake
 )
 hunter_download(
     PACKAGE_NAME Armadillo
