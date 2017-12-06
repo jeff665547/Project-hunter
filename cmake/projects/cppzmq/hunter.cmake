@@ -8,15 +8,14 @@ include(hunter_pick_scheme)
 
 hunter_add_version(
   PACKAGE_NAME cppzmq
-  VERSION ""
-  URL
-  "https://github.com/hunter-packages/zeromq4-1/archive/v4.1.4-hunter-p2.tar.gz"
-  SHA1
-  a3f39b9bbc23cf896cb78b3b33e3b46a45177eb5
-  )
+  VERSION "v4.2.2_ht_beta"  
+  URL "https://github.com/CHChang810716/cppzmq/archive/v4.2.2_ht_beta.tar.gz"
+  SHA1 0A95CB71F11FB04FAF06A6219C4411791F062713
+)
 
-
-hunter_cmake_args(ZeroMQ CMAKE_ARGS ZMQ_BUILD_TESTS=OFF)
 hunter_pick_scheme(DEFAULT url_sha1_cmake) 
-hunter_cacheable(ZeroMQ)
-hunter_download(PACKAGE_NAME ZeroMQ)
+hunter_cacheable(cppzmq)
+hunter_download(
+    PACKAGE_NAME cppzmq
+    PACKAGE_UNRELOCATABLE_TEXT_FILES "share/cmake/cppzmq/cppzmqTargets.cmake"
+)
