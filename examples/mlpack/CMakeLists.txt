@@ -13,7 +13,7 @@ project(download-MLPACK CXX C Fortran)
 # include(FortranCInterface)
 
 # download MLPACK
-hunter_add_package(MLPACK)
+hunter_add_package(mlpack)
 
 # now MLPACK can be used
 find_package(mlpack CONFIG REQUIRED)
