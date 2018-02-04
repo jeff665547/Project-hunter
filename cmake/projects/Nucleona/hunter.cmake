@@ -15,7 +15,7 @@ hunter_add_version(
     PACKAGE_NAME Nucleona
     VERSION "0.0.1"
     URL "http://60.250.196.14:8080/Nucleona/Nucleona-hunter-v0.0.1.tar.gz"
-    SHA1 3255F6EBF8C017290522B4806965940B53EDCB8A
+    SHA1 da8efe5151e9d7a07376aebb700148eb18c6dd1d
 )
 
 hunter_cmake_args(
