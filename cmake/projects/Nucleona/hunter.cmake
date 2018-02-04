@@ -14,7 +14,7 @@ include(hunter_protected_sources)
 hunter_add_version(
     PACKAGE_NAME Nucleona
     VERSION "0.0.1"
-    URL "http://xxxxxxxx/Nucleona/Nucleona-hunter-v0.0.1.tar.gz"
+    URL "http://60.250.196.14:8080/Nucleona/Nucleona-hunter-v0.0.1.tar.gz"
     SHA1 4578bee5ab1896436fd8cb00487cbc534ed929d9
 )
 
