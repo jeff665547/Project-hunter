@@ -19,11 +19,21 @@ hunter_add_version(
     SHA1
     "aa7524bae51f286a4f2b2c22434c1cbab71ff530"
 )
+hunter_add_version(
+    PACKAGE_NAME
+    hdf5
+    VERSION
+    "1.10.2-h0"
+    URL
+    "https://github.com/CHChang810716/hdf5/archive/hdf5-1_10_2-h0.tar.gz"
+    SHA1
+    "6342122f7fe3e87950acd495f8d3a84625fcca20"
+)
 
 hunter_cmake_args(
     hdf5
     CMAKE_ARGS
-    BUILD_SHARED_LIBS:BOOL=OFF
+    BUILD_SHARED_LIBS:BOOL=ON
     BUILD_TESTING:BOOL=OFF
     HDF5_ENABLE_Z_LIB_SUPPORT:BOOL=ON
     HDF5_ENABLE_SZIP_SUPPORT:BOOL=ON

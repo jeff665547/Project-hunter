@@ -16,4 +16,4 @@ find_package(szip CONFIG REQUIRED)
 find_package(hdf5 CONFIG REQUIRED)
 
 add_executable(foo h5_write.c)
-target_link_libraries(foo hdf5)
+target_link_libraries(foo hdf5-shared)
