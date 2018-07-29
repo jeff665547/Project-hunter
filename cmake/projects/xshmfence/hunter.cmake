@@ -15,6 +15,16 @@ hunter_add_version(
     PACKAGE_NAME
     xshmfence
     VERSION
+    "1.3"
+    URL
+    "http://www.x.org/releases/individual/lib/libxshmfence-1.3.tar.bz2"
+    SHA1
+    3472218fc0e8ee8183533d22dbcd4bbe90bf3ab8
+)
+hunter_add_version(
+    PACKAGE_NAME
+    xshmfence
+    VERSION
     "1.2"
     URL
     "http://www.x.org/releases/individual/lib/libxshmfence-1.2.tar.bz2"

@@ -1,0 +1,9 @@
+windows portable build
+cmake .. -DBINARY=64 -G "MinGW Makefiles" -DTARGET=GENERIC -DCMAKE_INSTALL_PREFIX="../stage"
+note: prescott taget?
+
+linux cross compile
+make CC=<arm cc> FC=<arm fc> HOSTCC=gcc TARGET=<arm target> CROSS=1
+
+linux x86_64 portable
+make TARGET=PRESCOTT PREFIX=./amd64_stage
