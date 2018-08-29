@@ -63,11 +63,6 @@ if(HUNTER_OpenBLAS_VERSION VERSION_LESS 0.3.1)
       "lib/cmake/openblas/OpenBLASConfig.cmake"
   )
 else()
-  hunter_cmake_args(
-    OpenBLAS
-    CMAKE_ARGS
-    NOFORTRAN=1
-  )
   hunter_pick_scheme(DEFAULT url_sha1_cmake)
   set(_openblas_unrelocatable_text_files "")
 endif()
