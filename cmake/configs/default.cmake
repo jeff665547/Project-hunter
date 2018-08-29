@@ -16,7 +16,7 @@ include(hunter_user_error)
 # NOTE: no names with spaces!
 
 hunter_default_version(ARM_NEON_2_x86_SSE VERSION 1.0.0-p0)
-hunter_default_version(ARPACK VERSION 3.6.0)
+hunter_default_version(ARPACK-NG VERSION 3.6.0)
 hunter_default_version(AllTheFlopsThreads VERSION 0.1-p0)
 hunter_default_version(Android-Apk VERSION 1.1.14)
 hunter_default_version(Android-Build-Tools VERSION 27.0.3)
