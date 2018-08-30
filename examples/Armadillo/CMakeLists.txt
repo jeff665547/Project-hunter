@@ -13,10 +13,11 @@ include(CheckLibraryExists)
 include(FortranCInterface)
 
 # download Armadillo
-hunter_add_package(Armadillo)
+hunter_add_package(armadillo)
 
 # now Armadillo can be used
-find_package(Armadillo CONFIG REQUIRED)
+find_package(armadillo CONFIG REQUIRED)
+find_package(ARPACK-NG)
 
 add_executable(foo foo.cpp)
-target_link_libraries(foo armadillo)
+target_link_libraries(foo armadillo::armadillo)
