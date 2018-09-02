@@ -8,9 +8,6 @@ cmake_minimum_required(VERSION 3.0)
 include("../common.cmake")
 
 project(download-MLPACK CXX C Fortran)
-# include(CheckIncludeFileCXX)
-# include(CheckLibraryExists)
-# include(FortranCInterface)
 
 # download MLPACK
 hunter_add_package(mlpack)

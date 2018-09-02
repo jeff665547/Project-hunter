@@ -12,9 +12,9 @@ include(hunter_cmake_args)
 
 hunter_add_version(
     PACKAGE_NAME mlpack
-    VERSION "3.0"
-    URL "https://github.com/CHChang810716/mlpack/archive/583ec972d44a2644a2902474d3d3a774d37f21e8.zip"
-    SHA1 "427bbdcbec5da697a3c992ba3bc267c49c9ae59a"
+    VERSION "2.2.5-p0"
+    URL "https://github.com/CHChang810716/mlpack/archive/3fed10fb5644640302a3f535d4d786ee668ea106.zip"
+    SHA1 "6620bd92e67f85499eb5d9dbc878fc54687f21fb"
 )
 
 hunter_cmake_args(
@@ -28,12 +28,6 @@ hunter_cmake_args(
 # hunter_configuration_types(mlpack CONFIGURATION_TYPES Release)
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(mlpack)
-set( UNRELOCATABLE_TEXT_FILES
-    lib/cmake/mlpack/mlpackTargets-debug.cmake
-    lib/cmake/mlpack/mlpackTargets-release.cmake
-    lib/cmake/mlpack/mlpackTargets.cmake
-)
 hunter_download(
     PACKAGE_NAME mlpack
-    PACKAGE_UNRELOCATABLE_TEXT_FILES ${UNRELOCATABLE_TEXT_FILES} 
 )
