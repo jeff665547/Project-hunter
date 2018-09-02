@@ -13,8 +13,8 @@ include(hunter_cmake_args)
 hunter_add_version(
     PACKAGE_NAME mlpack
     VERSION "2.2.5-p0"
-    URL "https://github.com/CHChang810716/mlpack/archive/3fed10fb5644640302a3f535d4d786ee668ea106.zip"
-    SHA1 "6620bd92e67f85499eb5d9dbc878fc54687f21fb"
+    URL "https://github.com/CHChang810716/mlpack/archive/6f070b12bde9427d97e060216662f32138c33791.zip"
+    SHA1 "1833281ba08ae6651ce10173584c86644481a302"
 )
 
 hunter_cmake_args(
