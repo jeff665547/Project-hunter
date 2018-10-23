@@ -7,6 +7,7 @@ include(hunter_add_version)
 include(hunter_download)
 include(hunter_pick_scheme)
 include(hunter_report_broken_package)
+include(hunter_cacheable)
 
 string(COMPARE EQUAL "${CMAKE_OSX_SYSROOT}" "iphoneos" _hunter_ios)
 if(_hunter_ios)
@@ -25,4 +26,5 @@ hunter_add_version(
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
+hunter_cacheable(CLAPACK)
 hunter_download(PACKAGE_NAME CLAPACK)
