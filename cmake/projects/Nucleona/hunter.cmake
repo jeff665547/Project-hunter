@@ -32,5 +32,4 @@ hunter_cmake_args(
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Nucleona)
-hunter_protected_sources(Nucleona)
 hunter_download(PACKAGE_NAME Nucleona)
