@@ -10,15 +10,15 @@ include(hunter_pick_scheme)
 
 hunter_add_version(
     PACKAGE_NAME
-    screw
+    Screw
     VERSION
     "0.0.1"
     URL
-    "http://gitlab.centrilliontech.com.tw:10080/centrillion/screw/repository/0.0.1/archive.tar.gz"
+    "http://gitlab.centrilliontech.com.tw:10080/centrillion/screw/repository/0.0.1/archive.tar.gz?private_token=dsHsHkzWzeibu-HB_kFM"
     SHA1
     167a98d7b78fc30af5aecad16993685397298ec5
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
-hunter_cacheable(screw)
-hunter_download(PACKAGE_NAME screw)
+hunter_cacheable(Screw)
+hunter_download(PACKAGE_NAME Screw)
