@@ -13,9 +13,9 @@ include(hunter_protected_sources)
 
 hunter_add_version(
     PACKAGE_NAME Nucleona
-    VERSION "0.0.1"
-    URL "http://60.250.196.14:8080/Nucleona/Nucleona-hunter-v0.0.1.tar.gz"
-    SHA1 da8efe5151e9d7a07376aebb700148eb18c6dd1d
+    VERSION "0.0.2"
+    URL "http://gitlab.centrilliontech.com.tw:10080/centrillion/Nucleona/repository/v0.0.2/archive.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
+    SHA1 0b7289f0b1b1c20cbcb80a8b709bb800fd7f8695
 )
 
 hunter_cmake_args(
