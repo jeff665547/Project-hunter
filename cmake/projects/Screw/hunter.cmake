@@ -14,7 +14,7 @@ hunter_add_version(
     VERSION
     "0.0.1"
     URL
-    "http://gitlab.centrilliontech.com.tw:10080/centrillion/screw/repository/0.0.1/archive.tar.gz?private_token=dsHsHkzWzeibu-HB_kFM"
+    "http://gitlab.centrilliontech.com.tw:10080/centrillion/screw/repository/0.0.1/archive.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
     SHA1
     167a98d7b78fc30af5aecad16993685397298ec5
 )
