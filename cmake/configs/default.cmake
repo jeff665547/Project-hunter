@@ -50,6 +50,7 @@ hunter_default_version(CLI11 VERSION 1.6.1)
 hunter_default_version(CURL VERSION 7.60.0-p0)
 hunter_default_version(CapnProto VERSION 0.6.1)
 hunter_default_version(Catch VERSION 2.2.2)
+hunter_default_version(ChipImgProc VERSION 0.0.3)
 hunter_default_version(Clang VERSION 4.0.1-p0)
 hunter_default_version(ClangToolsExtra VERSION 4.0.1) # Clang
 hunter_default_version(Comet VERSION 4.0.2)
