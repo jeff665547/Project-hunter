@@ -10,4 +10,4 @@ hunter_add_package(ChipImgProc)
 find_package(ChipImgProc CONFIG REQUIRED)
 
 add_executable(foo foo.cpp)
-target_link_libraries(foo PUBLIC ChipImgProc::ChipImgProc-utils)
+target_link_libraries(foo PUBLIC ChipImgProc::ChipImgProc)
