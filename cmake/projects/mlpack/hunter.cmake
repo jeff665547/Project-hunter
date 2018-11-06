@@ -16,12 +16,19 @@ hunter_add_version(
     URL "https://github.com/CHChang810716/mlpack/archive/6f070b12bde9427d97e060216662f32138c33791.zip"
     SHA1 "1833281ba08ae6651ce10173584c86644481a302"
 )
+hunter_add_version(
+    PACKAGE_NAME mlpack
+    VERSION "2.2.5-p1"
+    URL "https://github.com/CHChang810716/mlpack/archive/mlpack-2.2.5-p1.zip"
+    SHA1 "7a9e29feb1105b80dc1e54fc8e78d85e298ad214"
+)
 
 hunter_cmake_args(
     mlpack
     CMAKE_ARGS
         BUILD_TESTS=OFF 
         BUILD_CLI_EXECUTABLES=OFF 
+        USE_OPENMP=OFF
 #        BUILD_PYTHON_BINDINGS=OFF 
 )
 
