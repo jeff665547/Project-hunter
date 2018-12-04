@@ -21,6 +21,16 @@ hunter_add_version(
     SHA1
     5d6eb7c882eac643c5d2b3e59be747a5b2c13057
 )
+hunter_add_version(
+    PACKAGE_NAME
+    cvplot
+    VERSION
+    "0.0.3-p1"
+    URL
+    "https://github.com/CHChang810716/cvplot/archive/0.0.3-p1.zip"
+    SHA1
+    01386be60604d3a9fe52f033f1ec0beb0ab746e1
+)
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(cvplot)
