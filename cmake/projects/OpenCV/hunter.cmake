@@ -403,7 +403,10 @@ if(ANDROID)
 else()
   set(_android_args "")
 endif()
-
+set(OpenCV_ADDITIONAL_CMAKE_ARGS)
+if(MINGW)
+    list(APPEND OpenCV_ADDITIONAL_CMAKE_ARGS WITH_MSMF=OFF WITH_IPP=OFF)
+endif()
 hunter_cmake_args(
     OpenCV
     CMAKE_ARGS
@@ -436,6 +439,7 @@ hunter_cmake_args(
         BUILD_opencv_dnn=OFF
         # Fix for https://travis-ci.org/ingenue/hunter/builds/452039597
         WITH_OPENEXR=OFF
+        ${OpenCV_ADDITIONAL_CMAKE_ARGS}
 )
 
 # Pick a download scheme
