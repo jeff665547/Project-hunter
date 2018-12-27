@@ -216,7 +216,10 @@ if("@MINGW@")
   # cross compile from "linux" to "windows" using mingw
   set(build_opts target-os=windows ${build_opts})
 endif()
-
+if(DEFINED CMAKE_CXX_STANDARD)
+  hunter_status_debug("CXX STANDARD: ${CMAKE_CXX_STANDARD}")
+  list(APPEND build_opts cxxstd=${CMAKE_CXX_STANDARD})
+endif()
 set(BOOST_VERSION "@HUNTER_Boost_VERSION@")
 
 # Use:
