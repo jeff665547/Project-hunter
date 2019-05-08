@@ -71,6 +71,12 @@ hunter_add_version(
     URL "http://gitlab.centrilliontech.com.tw:10080/centrillion/Nucleona/repository/v0.3.0/archive.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
     SHA1 a245340ca8c707f39010d89f2aef622fd114cbe0
 )
+hunter_add_version(
+    PACKAGE_NAME Nucleona
+    VERSION "0.4.0"
+    URL "http://gitlab.centrilliontech.com.tw:10080/centrillion/Nucleona/repository/v0.4.0/archive.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
+    SHA1 1794922217900d2b6737aac31175aed3acf91ff1
+)
 
 hunter_cmake_args(
     Nucleona
