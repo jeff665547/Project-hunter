@@ -110,7 +110,14 @@ endif()
 
 if("@MSVC@")
   set(boost_compiler  "@CMAKE_CXX_COMPILER@")
-  string(REPLACE "/" "\\" boost_compiler "${boost_compiler}")
+
+  # Note:
+  # - '/' will not work
+  # - single '\' lead to bug
+  #
+  # See issue:
+  # - https://github.com/boostorg/build/issues/426#issuecomment-482564740
+  string(REPLACE "/" "\\\\" boost_compiler "${boost_compiler}")
 else()
   set(boost_compiler "@CMAKE_CXX_COMPILER@")
 endif()
@@ -219,10 +226,7 @@ if("@MINGW@")
   # cross compile from "linux" to "windows" using mingw
   set(build_opts target-os=windows ${build_opts})
 endif()
-if(DEFINED CMAKE_CXX_STANDARD)
-  hunter_status_debug("CXX STANDARD: ${CMAKE_CXX_STANDARD}")
-  list(APPEND build_opts cxxstd=${CMAKE_CXX_STANDARD})
-endif()
+
 set(BOOST_VERSION "@HUNTER_Boost_VERSION@")
 
 # Use:
@@ -276,11 +280,15 @@ endif()
 
 if(MSVC)
   # See 'boost_compiler' section
+
+  # Note: Flags should be quoted:
+  # - https://github.com/boostorg/build/issues/426#issuecomment-482564740
+
   foreach(cxx_flag ${cxx_flags_list})
     file(
         APPEND
         ${boost_user_jam}
-        "  <compileflags>${cxx_flag}\n"
+        "  <compileflags>\"${cxx_flag}\"\n"
     )
   endforeach()
 endif()
@@ -358,6 +366,12 @@ elseif("@MSVC@")
   elseif(is_x64)
     list(APPEND build_opts "address-model=64")
   endif()
+elseif("@MINGW@")
+  if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+    list(APPEND build_opts "address-model=64")
+  elseif(CMAKE_SIZEOF_VOID_P EQUAL 4)
+    list(APPEND build_opts "address-model=32")
+  endif()
 endif()
 
 string(COMPARE NOTEQUAL "@HUNTER_JOBS_OPTION@" "" have_jobs)
@@ -396,9 +410,9 @@ if(compiler_is_clang AND NOT CMAKE_CROSSCOMPILING)
   list(APPEND bootstrap_cmd "--with-toolset=clang")
 endif()
 
-if("@MINGW@")
-  list(APPEND bootstrap_cmd "gcc")
-endif()
+# if("@MINGW@")
+#   list(APPEND bootstrap_cmd "gcc")
+# endif()
 
 if("@ANDROID@")
   list(APPEND build_opts target-os=android)
