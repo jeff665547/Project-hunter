@@ -13,6 +13,17 @@ hunter_add_version(
     PACKAGE_NAME
     Beast
     VERSION
+    "hunter-189-hf1"
+    URL
+    "https://github.com/CHChang810716/beast/archive/hunter-189-hf1.tar.gz"
+    SHA1
+    8a7fe12b7eb4017eeb592f1b6a268a328f28679e
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Beast
+    VERSION
     "1.0.0-b84-hunter-0"
     URL
     "https://github.com/hunter-packages/Beast/archive/v1.0.0-b84-hunter-0.tar.gz"
