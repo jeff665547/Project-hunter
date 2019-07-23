@@ -29,6 +29,16 @@ hunter_add_version(
     SHA1
     "6342122f7fe3e87950acd495f8d3a84625fcca20"
 )
+hunter_add_version(
+    PACKAGE_NAME
+    hdf5
+    VERSION
+    "1.10.5-h0"
+    URL
+    "https://github.com/CHChang810716/hdf5/archive/hdf5-1_10_5-h0.tar.gz"
+    SHA1
+    "30b403e7f1439537c267bfe65800561ae4c90201"
+)
 
 hunter_cmake_args(
     hdf5
