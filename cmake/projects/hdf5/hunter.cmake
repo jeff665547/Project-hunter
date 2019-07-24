@@ -40,6 +40,12 @@ hunter_add_version(
     "30b403e7f1439537c267bfe65800561ae4c90201"
 )
 
+if( CMAKE_COMPILER_IS_GNUCC )
+    set(hdf5_C_FLAGS "-Wno-pedantic -Wno-unused-parameter")
+else()
+    set(hdf5_C_FLAGS)
+endif()
+
 hunter_cmake_args(
     hdf5
     CMAKE_ARGS
@@ -49,6 +55,9 @@ hunter_cmake_args(
     HDF5_ENABLE_SZIP_SUPPORT:BOOL=ON
     HDF5_BUILD_TOOLS:BOOL=OFF
     HDF5_BUILD_EXAMPLES:BOOL=OFF
+    CMAKE_C_FLAGS_DEBUG=${hdf5_C_FLAGS}
+    CMAKE_C_FLAGS_RELEASE=${hdf5_C_FLAGS}
+    CMAKE_C_FLAGS_RELWITHDEBINFO=${hdf5_C_FLAGS}
 )
 
 hunter_cacheable(hdf5)
