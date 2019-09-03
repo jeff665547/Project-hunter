@@ -52,6 +52,16 @@ hunter_add_version(
     SHA1
     5c0eac44a710f85cae6dc11aa7577ec90f30c5a8
 )
+hunter_add_version(
+    PACKAGE_NAME
+    range-v3
+    VERSION
+    0.9.1
+    URL
+    "https://github.com/ericniebler/range-v3/archive/0.9.1.tar.gz"
+    SHA1
+    13807c93e010dc46b4c6452a052bd480eee9a8d2
+)
 
 hunter_cmake_args(
     range-v3
