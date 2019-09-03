@@ -42,23 +42,32 @@ hunter_add_version(
 
 if( CMAKE_COMPILER_IS_GNUCC )
     set(hdf5_C_FLAGS "-Wno-pedantic -Wno-unused-parameter")
+    hunter_cmake_args(
+        hdf5
+        CMAKE_ARGS
+        BUILD_SHARED_LIBS:BOOL=OFF
+        BUILD_TESTING:BOOL=OFF
+        HDF5_ENABLE_Z_LIB_SUPPORT:BOOL=ON
+        HDF5_ENABLE_SZIP_SUPPORT:BOOL=ON
+        HDF5_BUILD_TOOLS:BOOL=OFF
+        HDF5_BUILD_EXAMPLES:BOOL=OFF
+        CMAKE_C_FLAGS_DEBUG=${hdf5_C_FLAGS}
+        CMAKE_C_FLAGS_RELEASE=${hdf5_C_FLAGS}
+        CMAKE_C_FLAGS_RELWITHDEBINFO=${hdf5_C_FLAGS}
+    )
 else()
-    set(hdf5_C_FLAGS)
+    hunter_cmake_args(
+        hdf5
+        CMAKE_ARGS
+        BUILD_SHARED_LIBS:BOOL=OFF
+        BUILD_TESTING:BOOL=OFF
+        HDF5_ENABLE_Z_LIB_SUPPORT:BOOL=ON
+        HDF5_ENABLE_SZIP_SUPPORT:BOOL=ON
+        HDF5_BUILD_TOOLS:BOOL=OFF
+        HDF5_BUILD_EXAMPLES:BOOL=OFF
+    )
 endif()
 
-hunter_cmake_args(
-    hdf5
-    CMAKE_ARGS
-    BUILD_SHARED_LIBS:BOOL=OFF
-    BUILD_TESTING:BOOL=OFF
-    HDF5_ENABLE_Z_LIB_SUPPORT:BOOL=ON
-    HDF5_ENABLE_SZIP_SUPPORT:BOOL=ON
-    HDF5_BUILD_TOOLS:BOOL=OFF
-    HDF5_BUILD_EXAMPLES:BOOL=OFF
-    CMAKE_C_FLAGS_DEBUG=${hdf5_C_FLAGS}
-    CMAKE_C_FLAGS_RELEASE=${hdf5_C_FLAGS}
-    CMAKE_C_FLAGS_RELWITHDEBINFO=${hdf5_C_FLAGS}
-)
 
 hunter_cacheable(hdf5)
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
