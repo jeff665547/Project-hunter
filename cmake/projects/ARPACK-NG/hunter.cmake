@@ -22,6 +22,18 @@ hunter_add_version(
     URL "https://github.com/CHChang810716/arpack-ng/archive/089e34e9e8a21f0af7510329a4d810db0dd4dee7.zip"
     SHA1 "59196f89df64921fdbc853c28084261883fc26b4"
 )
+hunter_add_version(
+    PACKAGE_NAME ARPACK-NG
+    VERSION "3.5.0-p2"
+    URL "https://github.com/CHChang810716/arpack-ng/archive/73b19ce1401a8906f5fe83e72503dcbfe02a4e13.zip"
+    SHA1 "d7b5d7151dbb404992763a115cfb3e39b35e721e"
+)
+hunter_add_version(
+    PACKAGE_NAME ARPACK-NG
+    VERSION "3.5.0-p3"
+    URL "https://github.com/CHChang810716/arpack-ng/archive/5693bee91b0518c825db5bb164140190639883d5.zip"
+    SHA1 "b9c328ccb6c3a640115c044a555352283dbd3415"
+)
 
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
