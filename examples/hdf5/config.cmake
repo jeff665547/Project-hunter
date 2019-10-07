@@ -4,3 +4,7 @@ if(UNIX)
       CMAKE_ARGS BUILD_SHARED_LIBS=ON
     )
 endif()
+hunter_config(hdf5
+  VERSION ${HUNTER_hdf5_VERSION}
+  CMAKE_ARGS BUILD_SHARED_LIBS=ON
+)
