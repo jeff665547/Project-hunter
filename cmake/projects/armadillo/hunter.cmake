@@ -51,6 +51,12 @@ hunter_add_version(
     URL "https://github.com/CHChang810716/armadillo-code/archive/8.200.x-p7.zip"
     SHA1 "1a73c2de6b6380e5d2664d266e36c71e6dd42b68"
 )
+hunter_add_version(
+    PACKAGE_NAME armadillo
+    VERSION "8.200.x-p8"
+    URL "https://github.com/CHChang810716/armadillo-code/archive/8.200.x-p8.zip"
+    SHA1 "33a74eab4515156c37a95ce2e89dc2e382670d01"
+)
 
 
 # hunter_configuration_types(Armadillo CONFIGURATION_TYPES Release)
