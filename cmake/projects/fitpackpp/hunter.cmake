@@ -13,11 +13,11 @@ hunter_add_version(
     PACKAGE_NAME
     fitpackpp
     VERSION
-    "1.0.0-p0"
+    "1.0.0-p1"
     URL
-    "https://github.com/CHChang810716/fitpackpp/archive/1.0.0-p0.zip"
+    "https://github.com/CHChang810716/fitpackpp/archive/1.0.0-p1.zip"
     SHA1
-    7ef4d66c6689f62bb47f05c9c6c519f806ba33a1
+    bbf3186ef9e73ba9bbe01ddcba1617bc767f8a20
 )
 
 # Pick a download scheme
