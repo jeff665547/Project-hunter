@@ -17,6 +17,12 @@ hunter_add_version(
     URL "http://gitlab.centrilliontech.com.tw:10080/JHHLAB/Biovoltron/repository/v0.1.0/archive.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
     SHA1 fe5367fd90da457a6bd7baf431cceaa2f8749eff
 )
+hunter_add_version(
+    PACKAGE_NAME Biovoltron
+    VERSION "0.1.1"
+    URL "http://gitlab.centrilliontech.com.tw:10080/JHHLAB/Biovoltron/repository/v0.1.1/archive.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
+    SHA1 45aa43b2fc577602042d8ba4dd47acbb736cf633
+)
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(Biovoltron)
