@@ -221,6 +221,12 @@ hunter_add_version(
     URL "http://gitlab.centrilliontech.com.tw:10080/centrillion/ChipImgProc/repository/v0.9.2/archive.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
     SHA1 a0e7f1e8e50cc795ad03e4ed8e9c36bd9ee1ef73
 )
+hunter_add_version(
+    PACKAGE_NAME ChipImgProc
+    VERSION "0.9.3"
+    URL "http://gitlab.centrilliontech.com.tw:10080/centrillion/ChipImgProc/repository/v0.9.3/archive.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
+    SHA1 c2d54a27d453a1e6418b055f2aaf975ffaba967a
+)
 hunter_cmake_args(
     ChipImgProc
     CMAKE_ARGS
