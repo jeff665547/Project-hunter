@@ -13,6 +13,19 @@ include(hunter_pick_scheme)
 
 # List of versions here...
 
+
+hunter_add_version(
+    PACKAGE_NAME
+    OpenCV
+    VERSION
+    "4.5.1"
+    URL
+    "https://github.com/opencv/opencv/archive/4.5.1.tar.gz"
+    SHA1
+    3e464886dc9907e879e2fc7097364427e96861f6
+)
+
+
 hunter_add_version(
     PACKAGE_NAME
     OpenCV
