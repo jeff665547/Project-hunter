@@ -344,8 +344,8 @@ hunter_add_version(
 hunter_add_version(
     PACKAGE_NAME ChipImgProc
     VERSION "0.9.22a"
-    URL "http://gitlab.centrilliontech.com.tw:10080/centrillion/ChipImgProc/-/archive/improve-perf/ChipImgProc-improve-perf.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
-    SHA1 b4917f6b4f245f6fca8c08e216273bf9499c155f
+    URL "http://gitlab.centrilliontech.com.tw:10080/api/v4/projects/129/repository/archive?sha=71b7620706b2d82ba837141476833c79878567d6&private_token=Mb9qZ6zbD4WivhkSzAPC"
+    SHA1 17168cead0c76e3e9ea3ac89090cdfa5b64b0c88
 )
 hunter_add_version(
     PACKAGE_NAME ChipImgProc
