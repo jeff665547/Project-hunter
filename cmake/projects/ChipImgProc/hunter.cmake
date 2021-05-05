@@ -358,6 +358,17 @@ hunter_cmake_args(
     CMAKE_ARGS
         BUILD_TESTS=OFF
 )
+hunter_add_version(
+    PACKAGE_NAME ChipImgProc
+    VERSION "0.9.25"
+    URL "http://gitlab.centrilliontech.com.tw:10080/api/v4/projects/129/repository/archive?sha=v0.9.25&private_token=Mb9qZ6zbD4WivhkSzAPC"
+    SHA1 4b89ae959e1fc64dd619df8ff56209ca74cf5da7
+)
+hunter_cmake_args(
+    ChipImgProc
+    CMAKE_ARGS
+        BUILD_TESTS=OFF
+)
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
 hunter_cacheable(ChipImgProc)
