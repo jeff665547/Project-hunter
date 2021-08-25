@@ -15,7 +15,7 @@ hunter_add_version(
     PACKAGE_NAME libfido2
     VERSION "1.8.0"
     URL "https://github.com/Yubico/libfido2/archive/refs/tags/1.8.0.tar.gz"
-    SHA1 5f895841c919f3e67f7601d4c65e950dd0efbe27
+    SHA1 4013dce7ee6147bceaf3e5e930f79b1cb2ca2ef2
 )
 hunter_cmake_args(
     libfido2
