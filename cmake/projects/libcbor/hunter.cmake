@@ -15,7 +15,7 @@ hunter_add_version(
     PACKAGE_NAME libcbor
     VERSION "0.8.0"
     URL "https://github.com/PJK/libcbor/archive/refs/tags/v0.8.0.tar.gz"
-    SHA1 0d0816a7302843fd62911470206cdf527e0218c7
+    SHA1 7ef8ab1d41973da933b27516b3398cbdeade6cb1
 )
 hunter_cmake_args(
     libcbor
