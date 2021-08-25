@@ -14,7 +14,7 @@ include(hunter_protected_sources)
 hunter_add_version(
     PACKAGE_NAME libcbor
     VERSION "0.8.0"
-    URL "http://gitlab.centrilliontech.com.tw:10080/centrillion/libcbor/repository/v0.8.0/archive.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
+    URL "http://gitlab.centrilliontech.com.tw:10088/centrillion/libcbor/repository/v0.8.0/archive.tar.gz?private_token=Mb9qZ6zbD4WivhkSzAPC"
     SHA1 e9c4582a3843248065384ca44e315c45af755fa1
 )
 hunter_cmake_args(
