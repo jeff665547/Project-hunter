@@ -15,7 +15,7 @@ hunter_add_version(
     PACKAGE_NAME libcbor
     VERSION "0.8.0"
     URL "http://gitlab.centrilliontech.com.tw:10088/api/v4/projects/264/repository/archive?sha=e9c4582a3843248065384ca44e315c45af755fa1&private_token=Mb9qZ6zbD4WivhkSzAPC"
-    SHA1 e9c4582a3843248065384ca44e315c45af755fa1
+    SHA1 0d0816a7302843fd62911470206cdf527e0218c7
 )
 hunter_cmake_args(
     libcbor
