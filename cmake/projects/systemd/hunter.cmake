@@ -15,7 +15,7 @@ hunter_add_version(
     PACKAGE_NAME systemd
     VERSION "v249"
     URL "https://github.com/systemd/systemd/archive/refs/tags/v249.tar.gz"
-    SHA1 4013dce7ee6147bceaf3e5e930f79b1cb2ca2ef2
+    SHA1 7c8e186aa6a81d97f86d62584062d0b560e4559d
 )
 hunter_cmake_args(
     systemd
