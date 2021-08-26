@@ -21,7 +21,7 @@ hunter_cmake_args(
     libfido2
     CMAKE_ARGS
         BUILD_TESTS=OFF
-        PACKAGE_CONFIGURATION_TYPES=Release
+        BUILD_SHARED_LIBS=ON
 )
 
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
