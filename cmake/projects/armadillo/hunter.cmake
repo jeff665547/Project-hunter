@@ -57,12 +57,7 @@ hunter_add_version(
     URL "https://github.com/CHChang810716/armadillo-code/archive/8.200.x-p8.zip"
     SHA1 "33a74eab4515156c37a95ce2e89dc2e382670d01"
 )
-hunter_add_version(
-    PACKAGE_NAME armadillo
-    VERSION "12.0.1.p1"
-    URL "http://gitlab.centrilliontech.com.tw:10088/api/v4/projects/290/repository/archive?sha=v12.0.1.p1&private_token=glpat-M_tcM2Eav-Vs4Gesp2eu"
-    SHA1 80fcb7294f8376376bf517ce1cf5d278d566cdb5
-)
+
 
 # hunter_configuration_types(Armadillo CONFIGURATION_TYPES Release)
 hunter_pick_scheme(DEFAULT url_sha1_cmake)
