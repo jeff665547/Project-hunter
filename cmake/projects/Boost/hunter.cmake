@@ -20,6 +20,17 @@ hunter_add_version(
     PACKAGE_NAME
     Boost
     VERSION
+    "1.71.0"
+    URL
+    "https://boostorg.jfrog.io/artifactory/main/release/1.71.0/source/boost_1_71_0.tar.bz2"
+    SHA1
+    5b0a3cef23f0c124dde5bbb64324f615ac843ace
+)
+
+hunter_add_version(
+    PACKAGE_NAME
+    Boost
+    VERSION
     "1.65.1"
     URL
     "${_hunter_boost_base_url}/1.65.1/source/boost_1_65_1.tar.bz2"
